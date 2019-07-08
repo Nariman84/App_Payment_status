@@ -5,7 +5,6 @@ import { CheckboxItemComponent } from './checkbox-item.component';
 describe('CheckboxItemComponent', () => {
   let component: CheckboxItemComponent;
   let fixture: ComponentFixture<CheckboxItemComponent>;
-  // let inputCheckbox: HTMLInputElement;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -23,14 +22,6 @@ describe('CheckboxItemComponent', () => {
   it('Создание компонента CheckboxItemComponent', () => {
     expect(component).toBeTruthy();
   });
-
-  // it('Клик по чекбоксу должен менять значение', () => {
-  //   inputCheckbox = fixture.debugElement.nativeElement.querySelector('.cell_checkbox');
-  //   expect(inputCheckbox.checked).toBeFalsy(); // по-умолчанию не кликнут
-  //   inputCheckbox.change();
-  //   fixture.detectChanges();
-  //   expect(inputCheckbox.checked).toBeTruthy(); // после клика стоит галочка
-  // });
 
   it('onChanged() пробрасывает наверх выбранный месяц', () => {
     let isChecked;
