@@ -1,0 +1,27 @@
+.table-payment {
+  margin: 20px auto;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+.table-heading,
+.table-body {
+  border: 1px solid #000;
+  background-color: #ccc;
+}
+.table-heading_row {
+  height: 40px;
+}
+.table-body_row {
+  height: 45px;
+  background-color: #e8e8e8;
+}
+.cell {
+  border: 1px solid #000;
+}
+.table-heading_month {
+  width: 50px;
+}
+.table-body_row:nth-child(odd) {
+  background-color: #fff;
+}

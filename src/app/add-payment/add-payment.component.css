@@ -1,0 +1,26 @@
+.name-payment,
+.cost-payment {
+  margin-right: 20px;
+  width: 250px;
+  padding: 0 5px;
+}
+.btn-add-payment {
+  width: 100px;
+  outline-style: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-add-payment:enabled:hover {
+  background-color: #545454;
+  color: #fff;
+}
+.btn-add-payment:disabled {
+  border-color: #b1b1b1;
+}
+.name-payment::-webkit-outer-spin-button,
+.name-payment::-webkit-inner-spin-button,
+.cost-payment::-webkit-outer-spin-button,
+.cost-payment::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

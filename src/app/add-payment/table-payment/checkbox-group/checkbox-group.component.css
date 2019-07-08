@@ -1,0 +1,46 @@
+.cell {
+  border: 1px solid #000;
+}
+
+/*Button 'Delete'*/
+
+.btn-del {
+  position: relative;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  -o-transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+}
+.btn-del:before,
+.btn-del:after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 2px;
+  height: 0;
+  width: 12px;
+  border: 1px solid #fff;
+}
+.btn-del:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.btn-del:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.btn-del:hover {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}

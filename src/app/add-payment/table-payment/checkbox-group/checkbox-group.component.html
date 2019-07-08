@@ -1,0 +1,8 @@
+<td class="table-body_name-payment cell">{{data?.name}}</td>
+<td class="table-body_cost cell">{{data?.cost}}</td>
+<td *ngFor="let month of months; let i = index" class="table-body_month cell">
+  <checkbox-item (onCheckedChange)="onCalcCostPerMonth($event, data, i + 1)"></checkbox-item>
+</td>
+<td class="table-body_delete cell">
+  <div class="btn-del" (click)="deleteRow()"></div>
+</td>

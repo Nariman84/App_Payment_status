@@ -1,0 +1,26 @@
+.cell_checkbox {
+  display: none;
+}
+.cell_mark {
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.cell_mark:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.cell_checkbox:checked + .cell_mark:before {
+  content: "\2714";
+  font-weight: bold;
+}

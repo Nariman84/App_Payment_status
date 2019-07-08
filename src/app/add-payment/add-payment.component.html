@@ -1,0 +1,10 @@
+<div class="field-add-payment">
+    <input class="name-payment" required
+              placeholder="Наименование платежа*" [(ngModel)]="namePayment" #name="ngModel" />
+    <input type="number" class="cost-payment" required
+        placeholder="Стоимость за день" [(ngModel)]="costPayment" #cost="ngModel" />
+    <input type="button" class="btn-add-payment"
+        [disabled]="isAddButtonDisabled()"
+        (click)="addPaymentInTable()" value="Добавить" />
+</div>
+<table-payment [inputData]="inputData"></table-payment>
